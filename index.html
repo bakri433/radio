@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live radio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header>
+                         <div class="img">
+                            <img src="thaura.jpg" alt="" id="image">
+                         </div>
+                         <h2 id="audio_title">اناشيد</h2>
+                         <audio id="audio-file" src=""></audio>
+            </header>
+   
+            <div class="controls">
+                <i id="prev" class="fa-solid fa-caret-left"></i>
+               <img src="play-64.png" alt="" id="play">
+                <i id="next" class="fa-solid fa-caret-right"></i>
+            </div>
+            <div class="sound">
+                <h2>الصوت</h2>
+                <input type="range" class="sounds">
+            </div>
+            <div class="speed">
+                <h2>السرعة</h2>
+                <input type="range" class="speeds" max="150" min="50">
+            </div>
+        </main>
+    </div>
+<script src="master.js"></script>
+    <script src="https://kit.fontawesome.com/ef28a8e647.js" crossorigin="anonymous"></script>
+</body>
+</html>

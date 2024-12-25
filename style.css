@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+ font-family: system-ui;
+
+}
+.scroller{
+    height: 2px;
+    width: 0px;
+    background-color: blue;
+    position: fixed;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #20a743 50%, black 50%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    margin: 25px 0 0 0;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    border: 3px solid white;
+   
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+header h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.img{
+margin: 5px;
+text-align: center;
+}
+.img img{
+width: 200px;
+    height: 200px;
+    box-shadow: 0 0 16px white;
+}
+.controls{
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+    justify-content: center;
+}
+.controls i{
+font-size: 40px;
+margin: 0px 20px;
+cursor: pointer;
+}
+.up{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    top: 50%;
+    position: fixed;
+    padding-top: 5px;
+    background: burlywood;
+    right: -65px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.up.reach{
+    right: 10px;
+}
+i.pause{
+    font-size: 40px;
+margin: 0px 20px;
+cursor: pointer;
+position: absolute;
+}
+.sound{
+    text-align: center;
+    padding-top: 25px;
+}
+.speed{
+    text-align: center;
+}
+.sound .sounds{
+    width: 80%;
+    height: 20px;
+    outline: none;
+}
+.speed .speeds{
+    width: 80%;
+    height: 20px;
+    outline: none;
+
+}
+/*.controls::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #6b6363;
+    top: 413px;
+
+}*/
+.controls img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.controls img.change{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+    top: -4px;
+}
+@media (max-width:567px){
+    main{
+        width: 80%;
+    }
+}
